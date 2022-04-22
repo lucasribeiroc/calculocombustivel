@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            var valorAlcool = 3.16;
+            var valorGasolina = 4.19;
+            var codigoCombustivel = prompt("Digite o código do combustível desejado: ");
+            var qtdeLitros = prompt("Digite a quantidade de litros que quer abastecer: ");
+
+            if (codigoCombustivel == 1) {
+                document.write("Código do combustível: 1");
+                document.write("<br>");
+                document.write("Quantidade de litros: " +qtdeLitros);
+                document.write("<br>");
+                document.write("Valor a pagar: R$ " +(qtdeLitros * valorAlcool));
+            } else
+            if (codigoCombustivel == 2) {
+                document.write("Código do combustível: 2");
+                document.write("<br>");
+                document.write("Quantidade de litros: " +qtdeLitros);
+                document.write("<br>");
+                document.write("Valor a pagar: R$ " +(qtdeLitros * valorGasolina));
+            } else {
+                document.write("Código inválido, tente novamente...");
+            }            
+        </script>
+    </body>
+</html>
